@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.SalesController">
    <children>
       <Label fx:id="lblMessage" layoutX="286.0" layoutY="139.0" />
       <Accordion layoutX="130.0" layoutY="20.0" />
   <AnchorPane layoutX="213.0" layoutY="231.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-    <TitledPane animated="false" layoutX="98.0" layoutY="89.0" text="Здарова">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-      </content>
-    </TitledPane>
-    <TitledPane animated="false" layoutX="300.0" layoutY="89.0" text="Привет">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-      </content>
-    </TitledPane>
+      <TableView editable="true" layoutX="176.0" layoutY="231.0" prefHeight="457.0" prefWidth="913.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="195.0" text="id" />
+          <TableColumn fx:id="name" prefWidth="247.0" text="name" />
+            <TableColumn fx:id="date" prefWidth="229.0" text="date" />
+            <TableColumn fx:id="dish" minWidth="0.0" prefWidth="241.0" text="dishDiscountSum" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="dateSelection" layoutX="176.0" layoutY="118.0" />
+      <DatePicker fx:id="toDP" layoutX="367.0" layoutY="118.0" />
+      <Text layoutX="568.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Продажи">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="176.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="От:" />
+      <Text layoutX="367.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="До:" />
+      <Text layoutX="176.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите дату" />
+      <TextField layoutX="176.0" layoutY="187.0" prefHeight="25.0" prefWidth="259.0" />
+      <Text layoutX="175.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск" />
    </children>
 </AnchorPane>

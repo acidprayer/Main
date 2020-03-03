@@ -15,8 +15,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -27,14 +29,22 @@ import main.Main;
 
 public class LoginController implements Initializable {
 
-    @FXML
     private TextField loginTF;
-    @FXML
     private PasswordField passPF;
     @FXML
     private Label lblMessage;
     @FXML
-    private Button loginButton;
+    private TableColumn<?, ?> id;
+    @FXML
+    private TableColumn<?, ?> name;
+    @FXML
+    private TableColumn<?, ?> date;
+    @FXML
+    private TableColumn<?, ?> dish;
+    @FXML
+    private DatePicker dateSelection;
+    @FXML
+    private DatePicker toDP;
    
  
     
@@ -44,7 +54,6 @@ public class LoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
     }    
 
-    @FXML
     private void autorization(MouseEvent event) {
        
        String dbname = "Resto";
@@ -57,6 +66,11 @@ public class LoginController implements Initializable {
                         + "database=Resto;"
                         + "user="+user+";"
                         + "password="+pass+";";
+        
+        
+        
+        
+        
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
             Connection conn = DriverManager.getConnection(connectionUrl);
@@ -72,9 +86,8 @@ public class LoginController implements Initializable {
             Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
         } 
         
-    // do what you have to do
-//    stage.close();
-   
+        
+
     
    }
     

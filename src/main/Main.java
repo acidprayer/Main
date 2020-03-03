@@ -10,18 +10,13 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-//    ///////
-//    @Override
-//            public void start (Stage stage) throws Exception {
-//    Parent root = FXMLLoader.load(getClass()).getResourse(""));
-//    
+      
     private static Stage stage;
-   //stage = anchorpane со всеми
-    //static = 
+ 
           
     public static void main(String[] args)  {
-     launch(args);
-       
+     launch(args);  
+        
         
     } 
 
@@ -33,14 +28,9 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setTitle("login");
         stage.show();
+      
     }   
-   
-//             AnchorPane panee;
-//        pane = (AnchorPane) FXMLLoader.load(getClass().getResource("fxml/app.fxml"));
-//        Scene scenee = new Scene(pane);
-//        stage.setScene(scenee);
-//        stage.setTitle("logine"); 
-//        stage.show();
+
      public static void switchScene(String location){   
         try {
             AnchorPane root = (AnchorPane) FXMLLoader.load(Main.class.getResource("fxml/"+location+".fxml"));
@@ -48,6 +38,8 @@ public class Main extends Application {
             stage.getScene().setRoot(root);
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            
         }
+        
      }
 }

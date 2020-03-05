@@ -18,13 +18,13 @@ import main.controllers.LoginController;
  */
 public class DBConnection {
     
-    private Connection conn;
+    private static Connection conn;
     
-    {
+    static{
         String dbname = "Resto";
         String user = "ricam";
         String pass = "RE8sto13";
-        String connectionUrl =
+        String connectionUrl = 
                 "jdbc:sqlserver://192.168.1.86;"
                         + "database=Resto;"
                         + "user=ricam;"
@@ -40,7 +40,7 @@ public class DBConnection {
     }
     
     
-    public Connection getConnection(){
+    public static Connection getConnection(){
         return conn;
     }
     

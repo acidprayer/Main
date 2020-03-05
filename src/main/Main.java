@@ -15,20 +15,17 @@ public class Main extends Application {
  
           
     public static void main(String[] args)  {
-     launch(args);  
-        
-        
+        launch(args);
     } 
 
     @Override
-    public void start(Stage stage)  throws Exception {
-        this.stage = stage;
+    public void start(Stage primaryStage)  throws Exception {
+        stage = primaryStage;
         AnchorPane pane = (AnchorPane) FXMLLoader.load(getClass().getResource("fxml/login.fxml"));
         Scene scene = new Scene(pane);
         stage.setScene(scene);
         stage.setTitle("login");
         stage.show();
-      
     }   
 
      public static void switchScene(String location){   

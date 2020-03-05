@@ -20,6 +20,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -33,5 +34,23 @@
       <updated>1583238706554</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583327161776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583327161776" />
+    <state x="803" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583326814287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="803" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583326814287" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583326375292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583326375292" />
+    <state x="730" y="279" key="SettingsEditor" timestamp="1583326955866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="730" y="279" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583326955866" />
   </component>
 </project>

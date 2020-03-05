@@ -45,6 +45,7 @@ public class LoginController implements Initializable {
     private DatePicker dateSelection;
     @FXML
     private DatePicker toDP;
+
    
  
     
@@ -53,38 +54,38 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }    
-
+    @FXML
     private void autorization(MouseEvent event) {
-       
-       String dbname = "Resto";
-        String user = "";
-        String pass = "";
-        user = loginTF.getText();
-        pass = passPF.getText();
-        String connectionUrl =
-                "jdbc:sqlserver://192.168.1.86;"
-                        + "database=Resto;"
-                        + "user="+user+";"
-                        + "password="+pass+";";
-        
-        
-        
-        
-        
-        try{
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
-            Connection conn = DriverManager.getConnection(connectionUrl);
-        if (!conn.isClosed()){
-                System.out.println("Connected");
-                Main.switchScene("app");
-           }else{
-                System.out.println("NotConnected");
-                   }
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-        } 
+       Main.switchScene("app");
+//       String dbname = "Resto";
+//        String user = "";
+//        String pass = "";
+//        user = loginTF.getText();
+//        pass = passPF.getText();
+//        String connectionUrl =
+//                "jdbc:sqlserver://192.168.1.86;"
+//                        + "database=Resto;"
+//                        + "user="+user+";"
+//                        + "password="+pass+";";
+//        
+//        
+//        
+//        
+//        
+//        try{
+//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
+//            Connection conn = DriverManager.getConnection(connectionUrl);
+//        if (!conn.isClosed()){
+//                System.out.println("Connected");
+//                Main.switchScene("app");
+//           }else{
+//                System.out.println("NotConnected");
+//                   }
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+//        } 
         
         
 

@@ -17,10 +17,10 @@
   <AnchorPane layoutX="213.0" layoutY="231.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
       <TableView editable="true" layoutX="176.0" layoutY="231.0" prefHeight="457.0" prefWidth="913.0">
         <columns>
-          <TableColumn fx:id="id" prefWidth="195.0" text="id" />
-          <TableColumn fx:id="name" prefWidth="247.0" text="name" />
-            <TableColumn fx:id="date" prefWidth="229.0" text="date" />
-            <TableColumn fx:id="dish" minWidth="0.0" prefWidth="241.0" text="dishDiscountSum" />
+          <TableColumn fx:id="col_id" prefWidth="195.0" text="id" />
+          <TableColumn fx:id="col_name" prefWidth="247.0" text="name" />
+            <TableColumn fx:id="col_date" prefWidth="229.0" text="date" />
+            <TableColumn fx:id="col_DS" minWidth="0.0" prefWidth="241.0" text="dishDiscountSum" />
         </columns>
       </TableView>
       <DatePicker fx:id="dateSelection" layoutX="176.0" layoutY="118.0" />
